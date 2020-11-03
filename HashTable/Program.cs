@@ -15,7 +15,7 @@ namespace HashTable
                 key++;
             }
             Frequency count = new Frequency();
-            count.FrequencyData(hash);
+            count.Remove(hash, "avoidable");
         }
     }
 }
