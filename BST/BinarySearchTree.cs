@@ -32,5 +32,13 @@ namespace BST
                 root.InOrderTraversal();
             }
         }
+        public int Size()
+        {
+            if (root == null)
+            {
+                Console.WriteLine("Binary Search Tree is Empty");
+            }
+            return treeSize;
+        }
     }
 }
