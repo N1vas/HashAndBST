@@ -1,12 +1,11 @@
 ﻿using System;
-
 namespace BST
 {
     class Program
     {
         static void Main(string[] args)
         {
-            BinarySearchTree binarySearchTree = new BinarySearchTree();
+            BinarySearchTree<int> binarySearchTree = new BinarySearchTree<int>(56);
             binarySearchTree.Insert(56);
             binarySearchTree.Insert(30);
             binarySearchTree.Insert(70);
@@ -21,8 +20,8 @@ namespace BST
             binarySearchTree.Insert(63);
             binarySearchTree.Insert(67);
             binarySearchTree.Display();
-            int size = binarySearchTree.Size();
-            Console.WriteLine("size of binary search tree is : " + size);
+            bool result = binarySearchTree.IfExists(30, binarySearchTree);
+            binarySearchTree.Size();
         }
     }
 }
